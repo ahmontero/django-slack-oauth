@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 
-from django.conf.urls import url
+try:
+    from django.urls import path
+except ImportError:
+    from django.conf.urls import url as path
 
 from .views import SlackAuthView, DefaultSuccessView
 
 
 urlpatterns = [
-    url('login/', SlackAuthView.as_view(), name='slack_auth'),
-    url('success/', DefaultSuccessView.as_view(), name='slack_success')
+    path('login/', SlackAuthView.as_view(), name='slack_auth'),
+    path('success/', DefaultSuccessView.as_view(), name='slack_success')
 ]
