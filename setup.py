@@ -4,7 +4,7 @@ import os
 from setuptools import setup
 
 
-version = '1.5.1'
+version = '1.6.0'
 
 
 with open(os.path.join(os.path.dirname(__file__), 'README.md')) as readme:
@@ -26,8 +26,8 @@ setup(
     long_description=README,
     author='Sergey Keller',
     author_email='izdieu@gmail.com',
-    url='https://github.com/izdi/django-slack-oauth',
-    download_url='https://github.com/izdi/django-slack-oauth/tarball/1.5.0',
+    url='https://github.com/ahmontero/django-slack-oauth.git',
+    download_url='https://github.com/ahmontero/django-slack-oauth.git/tarball/1.6.0',
     install_requires=[
         'Django>=1.8',
         'requests',
